@@ -1,0 +1,12 @@
+https://github.com/rdutta-repo/Pharmacy
+
+1. Can we create PR to follow code review process? Putting comments on code/implementing review comments is easier that way.
+2. Add .mvn/wrapper, mvnw and mvnw.cmd in .gitignore.
+3. Name the projects like ServiceRegistry instead of UserRegistration and UserService instread of SingleUserRegistration to describe purpose of modules
+4. Replace application.properties files with application.yml
+5. Please remove all commented lines from code
+6. Are we following TDD? No test written in SingleUserRegistration while main code is present.
+7. https://github.com/rdutta-repo/Pharmacy/blob/master/SingleUserRegistration/src/main/java/com/example/exam/model/UserBean.java 
+	use Lombok plugin instead of writting getter/setter. Why do we need to write toString? If you don't need it right now, don't write it.
+8. https://github.com/rdutta-repo/Pharmacy/blob/master/SingleUserRegistration/src/main/java/com/example/exam/controller/UserController.java
+	Try to return proper HttpResponse code like CREATED/DELETED instead of 200 always from each controller method.
